@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You ❤️</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: pink;
+      color: white;
+    }
+    h1 {
+      margin-top: 100px;
+      font-size: 40px;
+    }
+    button {
+      padding: 15px 25px;
+      font-size: 18px;
+      margin: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    #yes {
+      background: green;
+      color: white;
+    }
+    #no {
+      background: red;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Hi My Love ❤️</h1>
+<p>I have something special to ask you...</p>
+
+<h2>Will you be mine forever? 💍</h2>
+
+<button id="yes" onclick="yesClick()">Yes ❤️</button>
+<button id="no" onmouseover="moveButton()">No 😜</button>
+
+<script>
+function yesClick() {
+  alert("Yay! I love you ❤️");
+}
+
+function moveButton() {
+  let x = Math.random() * window.innerWidth;
+  let y = Math.random() * window.innerHeight;
+  document.getElementById("no").style.left = x + "px";
+  document.getElementById("no").style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
